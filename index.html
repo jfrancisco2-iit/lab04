@@ -20,17 +20,17 @@ $age = $_REQUEST['age_field'];
   </head>
   <body>
       <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
-	    <fieldset>
-		<legend>Volunteer Form</legend>
-		  <h3>My Info</h3>
-		  <label>First Name: <input type="text" name="first_text_field" placeholder="First Name"</label>
-		  <label>Last Name: <input type="text" name="last_text_field" placeholder="Last Name"</label>
+	    <h1>Volunteer Form</h1>
+		<fieldset>
+		<legend>My Info</legend>
+		  <label>First Name: <input type="text" name="first_name_field" placeholder="First Name"</label>
+		  <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"</label>
 		  <label>Phone Number: <input type="text" name="phone_field" placeholder="(xxx) xxx-xxx"</label>
 		  <label>Email Address: <input type="text" name="email_field" placeholder="myemail@mail.com"</label>
 		  <p>Gender: </p>
-		  <label>Male <input type="radio" name="gender_field" value="m"></label>
-		  <label>Female <input type="radio" name="gender_field" value="f"></label>
-		  <label>Other <input type="radio" name="gender_field" value="o"></label>
+		  <label>Male <input type="radio" name="gender_field" value="Male"></label>
+		  <label>Female <input type="radio" name="gender_field" value="Female"></label>
+		  <label>Other <input type="radio" name="gender_field" value="Other"></label>
 		  <p>Age (please select one):</p>
 		  <select name="age_field">
 		    <option value="under-18">under 18</option>
@@ -41,8 +41,9 @@ $age = $_REQUEST['age_field'];
 			<option value="55-64">55 - 64</option>
 			<option value="65-and-over">65 and over</option>
 		  </select>
-		
-		
+		</fieldset>
+		<fieldset>
+	    <legend>My Availability</legend>
 		</fieldset>
 		<input type="submit" value="Send Us Your Info!">
 	  </form>
