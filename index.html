@@ -27,24 +27,24 @@ $age = $_REQUEST['age_field'];
 		  <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"</label>
 		  <label>Phone Number: <input type="text" name="phone_field" placeholder="(xxx) xxx-xxx"</label>
 		  <label>Email Address: <input type="text" name="email_field" placeholder="myemail@mail.com"</label>
-		  <p>Gender: </p>
+		  <label for="gender">Gender: </label>
 		  <label>Male <input type="radio" name="gender_field" value="Male"></label>
 		  <label>Female <input type="radio" name="gender_field" value="Female"></label>
 		  <label>Other <input type="radio" name="gender_field" value="Other"></label>
-		  <p>Age (please select one):</p>
-		  <select name="age_field">
-		    <option value="under-18">under 18</option>
-			<option value="18-24">18 - 24</option>
-			<option value="25-34">25 - 34</option>
-			<option value="35-44">35 - 44</option>
-			<option value="45-54">45 - 54</option>
-			<option value="55-64">55 - 64</option>
-			<option value="65-and-over">65 and over</option>
-		  </select>
+		  <label for="age">Age (please select one):</label>
+		    <select name="age_field">
+		      <option value="under-18">under 18</option>
+			  <option value="18-24">18 - 24</option>
+			  <option value="25-34">25 - 34</option>
+			  <option value="35-44">35 - 44</option>
+			  <option value="45-54">45 - 54</option>
+			 <option value="55-64">55 - 64</option>
+			 <option value="65-and-over">65 and over</option>
+		    </select>
 		</fieldset>
 		<fieldset>
 	    <legend>My Availability</legend>
-		  <p>Days Available:</p>
+		  <label for="availability">Days Available:</label>
 		  <label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label>
 		  <label><input type="checkbox" name="available_field[]" value="Monday">Monday</label>
 		  <label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label>
@@ -53,6 +53,8 @@ $age = $_REQUEST['age_field'];
 		  <label><input type="checkbox" name="available_field[]" value="Friday">Friday</label>
 		  <label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label>
 		  <label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label>
+		  <label for="comments">Any Comments?</label>
+		    <textarea cols="20" rows="10" name="comments_field" placeholder="Type Here:)">
 		</fieldset>
 		<input type="submit" value="Send Us Your Info!">
 	  </form>
